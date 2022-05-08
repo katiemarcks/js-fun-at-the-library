@@ -104,5 +104,12 @@ belowTwoHundred[4];
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
 
+let dictionary = {
+  name: "Webster's",
+  hasThesaurus: false,
+};
+
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+
+dictionary.pageCount = 720;

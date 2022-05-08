@@ -76,13 +76,27 @@ let talkAboutBook = function (isFavorite) {
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
+let books = [
+  "And Then There Were None",
+  "Carrie",
+  "My Beautiful Friend",
+  "Stoner",
+  "The Perks of Being a Wallflower",
+];
+
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
+
+books[2];
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
 
+let belowTwoHundred = [45, 39, 150, 2, 50, 10, 19, 175, 199, 28, 66, 77];
+
 // Write the code to access the 5th element of the array, using bracket notation.
+
+belowTwoHundred[4];
 
 //------------------------- Objects -------------------------//
 

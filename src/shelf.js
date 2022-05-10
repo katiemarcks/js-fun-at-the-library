@@ -23,7 +23,10 @@ function listTitles(shelf) {
   return str;
 }
 
-function searchShelf(shelf) {}
+function searchShelf(shelf, title) {
+  let searchTitle = (element) => element.title === title;
+  return shelf.some(searchTitle);
+}
 
 module.exports = {
   shelfBook,

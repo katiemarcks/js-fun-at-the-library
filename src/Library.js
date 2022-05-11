@@ -15,8 +15,20 @@ function addBook(library, book) {
   correctShelf.push(book);
 }
 
+function checkoutBook(library, title, shelf) {
+  let correctShelf = library.shelves[shelf];
+  for (let i = 0; i < correctShelf.length; i++) {
+    const element = correctShelf[i];
+    if (element.title === title) {
+      let index = correctShelf.indexOf(title);
+      correctShelf.splice(index, 1);
+      return `You have now checked out ${title} from the ${library.name}`;
+    }
+  }
+}
+
 module.exports = {
   createLibrary,
   addBook,
-  // checkoutBook
+  checkoutBook,
 };

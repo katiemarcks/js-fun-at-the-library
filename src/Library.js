@@ -11,8 +11,7 @@ function createLibrary(name) {
 
 function addBook(library, book) {
   let genre = book.genre;
-  let correctShelf = library.shelves.genre;
-  correctShelf = [];
+  let correctShelf = library.shelves[genre];
   correctShelf.push(book);
 }
 

@@ -144,7 +144,7 @@ describe("library.js", function () {
       );
     });
 
-    it.skip("should only checkout a book if the book is on the shelves", function () {
+    it("should only checkout a book if the book is on the shelves", function () {
       var denverLibrary = createLibrary("Denver Public Library");
 
       var error1 = checkoutBook(denverLibrary, "The Fifth Season", "fantasy");

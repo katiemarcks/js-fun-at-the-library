@@ -25,6 +25,7 @@ function checkoutBook(library, title, shelf) {
       return `You have now checked out ${title} from the ${library.name}`;
     }
   }
+  return `Sorry, there are currently no copies of ${title} available at the ${library.name}`;
 }
 
 module.exports = {

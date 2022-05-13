@@ -64,7 +64,7 @@ describe("Librarian (class)", function () {
     assert.equal(bookConfirmation, "Yes, we have The Fifth Season");
   });
 
-  it.skip("should say if requested book is not found", function () {
+  it("should say if requested book is not found", function () {
     var library = createLibrary("Aurora Public Library");
     var librarian = new Librarian("Casey", library);
     var book = { title: "The Fifth Season", genre: "fantasy" };
@@ -79,7 +79,7 @@ describe("Librarian (class)", function () {
     );
   });
 
-  it.skip("should checkout the book if found", function () {
+  it("should checkout the book if found", function () {
     var library = createLibrary("Aurora Public Library");
     var librarian = new Librarian("Casey", library);
     var book = { title: "The Fifth Season", genre: "fantasy" };
